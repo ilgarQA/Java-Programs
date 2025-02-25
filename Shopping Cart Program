@@ -14,20 +14,34 @@ public class Main {
     // Declaring and initializing variable currency type of char
     char currency = '$';
 
+    // Prints the message
     System.out.print("What you would like to buy: ");
+
+    // Stores the input into the variable named "item" using scanner and nextLine() because "item" is a type of String
     item = scanner.nextLine();
 
+    // Prints the message
     System.out.print("What is the price for each: ");
+
+    // Stores the input into the variable named "price" using scanner and nextDouble() because "price" is a type of double
     price = scanner.nextDouble();
 
+    // Prints the message
     System.out.println("How many would you like? ");
+
+    // Stores the input into the variable named "quantity" using scanner and nextInt() because "quantity" is a type of int
     quantity = scanner.nextInt();
 
+    // Initializing the variable - total which equal price times quantity
     total = price * quantity;
 
+    // Omits a line, then prints the message + value of quantity + space between + value of item + the letter "s"
     System.out.println("\nYou have bought " + quantity + " " + item + "s");
+
+    // Prints the message + the sign of currency + value of "total" that's been calculated 
     System.out.println("Your total is " + currency + total);
 
+    // Closes the "scanner" instance
     scanner.close();
 
     }
