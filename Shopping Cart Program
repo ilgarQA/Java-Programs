@@ -3,13 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
 
+    // Creates an Scanner instance to use Scanner class
     Scanner scanner = new Scanner(System.in);
 
+    // Declaring variables
     String item = "pizza";
     double price;
     int quantity;
-    char currency = '$';
     double total;
+    // Declaring and initializing variable currency type of char
+    char currency = '$';
 
     System.out.print("What you would like to buy: ");
     item = scanner.nextLine();
