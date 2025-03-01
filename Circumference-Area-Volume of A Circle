@@ -27,8 +27,5 @@ public class Main {
         System.out.printf("The volume is: %.1f cm^3 \n", volume);
         
         scanner.close();
-
-
-
     }
 }
